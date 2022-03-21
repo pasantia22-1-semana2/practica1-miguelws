@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="cargarApp()">
+    <div>
+        <section class="budget-section">
+            <div class="budget-content">
+                <h4 class="budget-title">Presupuesto Disponible</h3>
+                <h1 class="budget-money" id="presupuesto">$ 2,000</h1>
+                <div class="ingress-info">
+                    <h4 class="ingress-title">Ingresos</h3>
+                    <div class="info-content">
+                        <div class="ingress-money" id="">$3,600</div>
+                        <div class="ingress-porcent"></div>
+                    </div>
+                </div>
+                <div class="egress-info">
+                    <h4 class="egress-title">Egresos</h3>
+                    <div class="info-content">
+                        <div class="egress-money" id="">$1,302</div>
+                        <div class="egress-percent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data-section">
+            <div class="data-content">
+                <form>
+                    <select>
+                        <option>+</option>
+                        <option>-</option>
+                    </select>
+                    <input class="" type="text" placeholder="Descripcion" id="">
+                    <input class="" type="number" placeholder="Valor" id="">
+                </form>
+                <button class="btn-ok" onclick="">OK</button>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="info-content">
+                <table>
+                    <tr>
+                        <th>Ingreso</th>
+                    </tr>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table>
+                    <tr>
+                        <th>Egreso</th>
+                    </tr>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<script src="js/data.js"></script>
+<script src="js/egress.js"></script>
+<script src="js/ingress.js"></script>
+</html>
