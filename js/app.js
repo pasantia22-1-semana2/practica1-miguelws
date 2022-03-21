@@ -54,7 +54,7 @@ let cargarIngresos = ()=>{
     }
     document.getElementById("lista-ingresos").innerHTML = ingresoHTML;
 }
-
+/*
 const crearIngresoHTML = (ingreso)=>{
     let ingresoHTML = `
         <div>
@@ -69,61 +69,13 @@ const crearIngresoHTML = (ingreso)=>{
     `;
     return ingresoHTML;
 }
+*/
 
+/*
 let eliminarIngreso = (id)=>{
     let indiceEliminar = ingreso.findIndex(ingreso => ingreso.id === id)
     ingresos.splice(indiceEliminar, 1);
     cargarCabecera();
     cargarIngresos();
 }
-
-let cargarEgresos = ()=>{
-    let egresoHTML = "";
-    for (let egreso of egresos){
-        egresoHTML += crearEgresoHTML(egreso);
-    }
-    document.getElementById("lista-egresos").innerHTML = egresoHTML;
-}
-
-const crearEgresoHTML = (egreso)=>{
-    let egresoHTML = `
-        <div>
-            <div>${egreso.descripcion}</div>
-            <div>
-                <div>- ${formatoMoneda(egreso.valor)}</div>
-                <div>${formatoPorcentaje(egreso.valor / totalEgresos())}</div>
-                <div>
-                    <button onclick="eliminarIngreso(${egreso.id})">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    `;
-    return egresoHTML;
-}
-
-let eliminarEgreso = (id)=>{
-    let indiceEliminar = egresos.findIndex(egreso => egreso.id === id);
-    egresos.splice(indiceEliminar, 1);
-    cargarCabecera();
-    cargarEgresos();
-}
-
-let agregarDato = ()=>{
-    let forma = document.forms["forma"];
-    let tipo = forma["tipo"];
-    let descripcion = forma["descripcion"];
-    let valor = forma["valor"];
-
-    if (descripcion.value !== "" && valor.value !== ""){
-        if (tipo.value === "ingreso"){
-            ingresos.push(new Ingreso(descripcion.value, +valor.value));
-            cargarCabecera();
-            cargarIngresos();
-        }
-        else if(tipo.value === "egreso"){
-            egresos.push(new Egreso(descripcion.value, +valor.value));
-            cargarCabecera();
-            cargarEgresos();
-        }
-    }
-}
+*/
